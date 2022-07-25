@@ -1,5 +1,6 @@
 package com.example.learninggamelistview;
 
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -20,5 +21,12 @@ public class alphabetRecyclerView extends RecyclerView.Adapter<alphabetRecyclerV
     @Override
     public int getItemCount() {
         return 0;
+    }
+
+    public static class MyViewHolder extends RecyclerView.ViewHolder{
+
+        public MyViewHolder(@NonNull View itemView) {
+            super(itemView);
+        }
     }
 }
