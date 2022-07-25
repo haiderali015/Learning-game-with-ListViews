@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -55,6 +56,12 @@ public class MainActivity extends AppCompatActivity {
     private void setupAlphabets()
     {
         String [] full_sentence = getResources().getStringArray(R.array.full_sentence);
+        String [] one_letter_text = getResources().getStringArray(R.array.one_letter_text);
+
+        for (int i =0; i<full_sentence.length; i++)
+        {
+            alphabetclass.add(new alphabetclass(full_sentence[i],one_letter_text[i]));
+        }
     }
 
 }
