@@ -1,3 +1,61 @@
 <resources>
-    <string name="app_name">LearningGameListView</string>
+    <string name="app_name">Alphabets Game</string>
+
+    <string-array name="full_sentence">
+        <item>A for </item>
+        <item>B for </item>
+        <item>C for </item>
+        <item>D for </item>
+        <item>E for </item>
+        <item>F for </item>
+        <item>G for </item>
+        <item>H for </item>
+        <item>I for </item>
+        <item>J for </item>
+        <item>K for </item>
+        <item>L for </item>
+        <item>M for </item>
+        <item>N for </item>
+        <item>O for </item>
+        <item>P for </item>
+        <item>Q for </item>
+        <item>R for </item>
+        <item>S for </item>
+        <item>T for </item>
+        <item>U for </item>
+        <item>V for </item>
+        <item>W for </item>
+        <item>X for </item>
+        <item>Y for </item>
+        <item>Z for </item>
+    </string-array>
+
+    <string-array name="one_letter_text">
+        <item>A  </item>
+        <item>B  </item>
+        <item>C  </item>
+        <item>D  </item>
+        <item>E  </item>
+        <item>F  </item>
+        <item>G for </item>
+        <item>H for </item>
+        <item>I for </item>
+        <item>J for </item>
+        <item>K for </item>
+        <item>L for </item>
+        <item>M for </item>
+        <item>N for </item>
+        <item>O for </item>
+        <item>P for </item>
+        <item>Q for </item>
+        <item>R for </item>
+        <item>S for </item>
+        <item>T for </item>
+        <item>U for </item>
+        <item>V for </item>
+        <item>W for </item>
+        <item>X for </item>
+        <item>Y for </item>
+        <item>Z for </item>
+    </string-array>
 </resources>
