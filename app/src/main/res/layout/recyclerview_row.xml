@@ -26,7 +26,7 @@
 
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="72dp"
@@ -40,28 +40,26 @@
                 app:layout_constraintVertical_bias="0.733" />
 
             <TextView
-                android:id="@+id/A"
+                android:id="@+id/capital"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
                 android:text="A"
                 android:textColor="#FFFFFF"
                 android:textSize="90dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/a"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
-                android:id="@+id/a"
+                android:id="@+id/small"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginEnd="76dp"
+                android:layout_marginEnd="68dp"
                 android:text="a"
                 android:textColor="#FFFFFF"
-
-
                 android:textSize="90dp"
                 android:translationX="0dp"
-                app:layout_constraintEnd_toStartOf="@+id/textView2"
+                app:layout_constraintEnd_toStartOf="@+id/text"
                 tools:layout_editor_absoluteY="0dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
