@@ -26,8 +26,9 @@ public class alphabetRecyclerView extends RecyclerView.Adapter<alphabetRecyclerV
     @Override
     public alphabetRecyclerView.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater= LayoutInflater.from(context);
-        
-        return null;
+        View view =inflater.inflate(R.layout.recyclerview_row,parent,false);
+
+        return new alphabetRecyclerView.MyViewHolder(view);
     }
 
     @Override
