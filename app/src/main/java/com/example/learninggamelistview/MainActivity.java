@@ -1,6 +1,7 @@
 package com.example.learninggamelistview;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -13,7 +14,6 @@ import android.widget.Button;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    ArrayList<alphabetclass> alphabetclass= new ArrayList<>();
 
     Button btn, btn1, btn2;
 
@@ -22,18 +22,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        RecyclerView recyclerView = findViewById(R.id.myrecyclerview);
-        setupAlphabets();
-        alphabetRecyclerView adapter = new alphabetRecyclerView(this,alphabetclass);
-//        btn = findViewById(R.id.learn);
-//        btn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent i = new Intent(getApplicationContext(), secondA.class);
-//                startActivity(i);
-//
-//            }
-//        });
+
+
+
+        btn = findViewById(R.id.learn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), secondA.class);
+                startActivity(i);
+
+            }
+        });
 //
 //        btn1 = findViewById(R.id.repository);
 //        btn1.setOnClickListener(new View.OnClickListener() {
@@ -57,15 +57,6 @@ public class MainActivity extends AppCompatActivity {
 //        });
     }
 
-    private void setupAlphabets()
-    {
-        String [] full_sentence = getResources().getStringArray(R.array.full_sentence);
-        String [] one_letter_text = getResources().getStringArray(R.array.one_letter_text);
 
-        for (int i =0; i<full_sentence.length; i++)
-        {
-            alphabetclass.add(new alphabetclass(full_sentence[i],one_letter_text[i]));
-        }
-    }
 
 }

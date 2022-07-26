@@ -11,6 +11,13 @@ public class alphabetclass {
         this.alphabetStandsfor = alphabetStandsfor;
     }
 
+    public alphabetclass(String alphabetName, String smallName) {
+        this.alphabetName = alphabetName;
+        this.smallName = smallName;
+        this.alphabetStandsfor = alphabetStandsfor;
+    }
+
+
     public String getAlphabetName() {
         return alphabetName;
     }

@@ -12,11 +12,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class alphabetRecyclerView extends RecyclerView.Adapter<alphabetRecyclerView.MyViewHolder>{
-    ArrayList<alphabetclass> alphabetclass;
+    ArrayList<alphabetclass> alphabetClass;
     Context context;
-    public alphabetRecyclerView (Context context, ArrayList<alphabetclass> alphabetclass){
+    public alphabetRecyclerView (Context context, ArrayList<alphabetclass> alphabetClass){
         this.context=context;
-        this.alphabetclass=alphabetclass;
+        this.alphabetClass=alphabetClass;
     }
 
 
@@ -33,13 +33,15 @@ public class alphabetRecyclerView extends RecyclerView.Adapter<alphabetRecyclerV
 
     @Override
     public void onBindViewHolder(@NonNull alphabetRecyclerView.MyViewHolder holder, int position) {
-        holder.txt1.setText(alphabetclass.get(position).getAlphabetName());
-        holder.txt2.setText(alphabetclass.get(position).getSmallName());
+        holder.txt1.setText(alphabetClass.get(position).getAlphabetName());
+        holder.txt2.setText(alphabetClass.get(position).getSmallName());
+        holder.txt3.setText(alphabetClass.get(position).getAlphabetStandsfor());
+
     }
 
     @Override
     public int getItemCount() {
-        return alphabetclass.size();
+        return alphabetClass.size();
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
@@ -50,6 +52,7 @@ public class alphabetRecyclerView extends RecyclerView.Adapter<alphabetRecyclerV
             super(itemView);
             txt1=itemView.findViewById(R.id.capital);
             txt2=itemView.findViewById(R.id.small);
+            txt3=itemView.findViewById(R.id.standfor);
         }
     }
 }
