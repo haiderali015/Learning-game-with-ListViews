@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 import java.util.ArrayList;
 
-public class secondA extends AppCompatActivity {
+public class secondA extends AppCompatActivity implements RecyclerViewInterface{
     ArrayList<alphabetclass> alphabetclass= new ArrayList<>();
 
     @Override
@@ -33,5 +33,10 @@ public class secondA extends AppCompatActivity {
         {
             alphabetclass.add(new alphabetclass(full_sentence[i],one_letter_text[i],standsfor[i]));
         }
+    }
+
+    @Override
+    public void onItemclick(int position) {
+
     }
 }

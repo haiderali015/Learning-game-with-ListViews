@@ -14,9 +14,12 @@ import java.util.ArrayList;
 public class alphabetRecyclerView extends RecyclerView.Adapter<alphabetRecyclerView.MyViewHolder>{
     ArrayList<alphabetclass> alphabetClass;
     Context context;
-    public alphabetRecyclerView (Context context, ArrayList<alphabetclass> alphabetClass){
+    private final RecyclerViewInterface recyclerViewInterface;
+    public alphabetRecyclerView (Context context, ArrayList<alphabetclass> alphabetClass,
+                                 RecyclerViewInterface recyclerViewInterface){
         this.context=context;
         this.alphabetClass=alphabetClass;
+        this.recyclerViewInterface=recyclerViewInterface;
     }
 
 
