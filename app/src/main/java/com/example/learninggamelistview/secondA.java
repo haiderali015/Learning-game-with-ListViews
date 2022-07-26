@@ -18,7 +18,7 @@ public class secondA extends AppCompatActivity implements RecyclerViewInterface{
 
         RecyclerView recyclerView = findViewById(R.id.myrecyclerview);
         setupAlphabets();
-        alphabetRecyclerView adapter = new alphabetRecyclerView(this,alphabetclass);
+        alphabetRecyclerView adapter = new alphabetRecyclerView(this,alphabetclass,this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }

@@ -31,7 +31,7 @@ public class alphabetRecyclerView extends RecyclerView.Adapter<alphabetRecyclerV
         LayoutInflater inflater= LayoutInflater.from(context);
         View view =inflater.inflate(R.layout.recyclerview_row,parent,false);
 
-        return new alphabetRecyclerView.MyViewHolder(view);
+        return new alphabetRecyclerView.MyViewHolder(view,recyclerViewInterface);
     }
 
     @Override
@@ -51,11 +51,27 @@ public class alphabetRecyclerView extends RecyclerView.Adapter<alphabetRecyclerV
 
         TextView txt1,txt2,txt3;
 
-        public MyViewHolder(@NonNull View itemView) {
+        public MyViewHolder(@NonNull View itemView,RecyclerViewInterface recyclerViewInterface) {
             super(itemView);
             txt1=itemView.findViewById(R.id.capital);
             txt2=itemView.findViewById(R.id.small);
             txt3=itemView.findViewById(R.id.standfor);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    if(recyclerViewInterface!=null)
+                    {
+                        int pos =getAdapterPosition();
+
+                        if(pos!=RecyclerView.NO_POSITION)
+                        {
+                            recyclerViewInterface.onItemclick(pos);
+                        }
+                    }
+                }
+            });
         }
     }
 }
